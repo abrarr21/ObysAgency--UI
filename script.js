@@ -60,4 +60,4 @@ function cursorAnimation(){
 }
 
 loadingAnimation()
-cursorAnimation()
+// cursorAnimation()
