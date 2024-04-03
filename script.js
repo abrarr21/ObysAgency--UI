@@ -51,7 +51,7 @@ tl.from("#line1-part1", {
             else{
                 h5timer.innerHTML = grow
             }
-            }, 33);
+            }, 28);
     },
 });
 tl.to(".line h2", {
@@ -149,3 +149,22 @@ loadingAnimation()
 cursorAnimation()
 locomotiveAnimation()
 sheryanimation()
+
+document.addEventListener("mousemove", function(dets){
+    gsap.to("#flag", {
+        x: dets.x,
+        y: dets.y
+    })
+})
+
+document.querySelector("#hero3").addEventListener("mouseenter", function(){
+    gsap.to("#flag", {
+        opacity: 1
+    })
+})
+
+document.querySelector("#hero3").addEventListener("mouseleave", function(){
+    gsap.to("#flag", {
+        opacity: 0
+    })
+})
